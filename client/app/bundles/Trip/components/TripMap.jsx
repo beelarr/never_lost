@@ -8,7 +8,6 @@ if (!token) {
     throw new Error('That token is bad');
 }
 
-import MARKER_STYLE from '../MarkerStyle';
 
 
 @inject('TripStore')
@@ -86,7 +85,6 @@ export default class TripStore extends Component {
                 onViewportChange={this.onViewportChange}
                 mapboxApiAccessToken={token}
             >
-              <style>{MARKER_STYLE}</style>
                 { TripStore.checkins.map(this.renderMarker) }
             </MapGL>
         );
