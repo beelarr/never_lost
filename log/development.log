@@ -13667,3 +13667,232 @@ TripChannel#receive({"owner_uuid"=>"f0777c4b-b948-40da-9ac4-f3f2587ee8e2", "lat"
   [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "f0777c4b-b948-40da-9ac4-f3f2587ee8e2"], ["LIMIT", 1]]
 [ActionCable] Broadcasting to trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb: {:lat=>36.1326056, :lon=>-86.75667969999999, :captured_at=>1512766594917}
 TripChannel transmitting {"lat"=>36.1326056, "lon"=>-86.75667969999999, "captured_at"=>1512766594917} (via streamed from trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb)
+TripChannel#receive({"owner_uuid"=>"f0777c4b-b948-40da-9ac4-f3f2587ee8e2", "lat"=>36.132616299999995, "lon"=>-86.7566669, "captured_at"=>1512766605965})
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "f0777c4b-b948-40da-9ac4-f3f2587ee8e2"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb: {:lat=>36.132616299999995, :lon=>-86.7566669, :captured_at=>1512766605965}
+TripChannel transmitting {"lat"=>36.132616299999995, "lon"=>-86.7566669, "captured_at"=>1512766605965} (via streamed from trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb)
+TripChannel#receive({"owner_uuid"=>"f0777c4b-b948-40da-9ac4-f3f2587ee8e2", "lat"=>36.1325929, "lon"=>-86.7566902, "captured_at"=>1512766619056})
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "f0777c4b-b948-40da-9ac4-f3f2587ee8e2"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb: {:lat=>36.1325929, :lon=>-86.7566902, :captured_at=>1512766619056}
+TripChannel transmitting {"lat"=>36.1325929, "lon"=>-86.7566902, "captured_at"=>1512766619056} (via streamed from trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb)
+TripChannel#receive({"owner_uuid"=>"f0777c4b-b948-40da-9ac4-f3f2587ee8e2", "lat"=>36.1326177, "lon"=>-86.7566665, "captured_at"=>1512766628651})
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "f0777c4b-b948-40da-9ac4-f3f2587ee8e2"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb: {:lat=>36.1326177, :lon=>-86.7566665, :captured_at=>1512766628651}
+TripChannel transmitting {"lat"=>36.1326177, "lon"=>-86.7566665, "captured_at"=>1512766628651} (via streamed from trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb)
+Started GET "/trips/5e596cf0-ff27-4f07-9304-43ec44c9d3cb" for ::1 at 2017-12-08 14:57:16 -0600
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5e596cf0-ff27-4f07-9304-43ec44c9d3cb"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."viewer_uuid" = $1 LIMIT $2[0m  [["viewer_uuid", "5e596cf0-ff27-4f07-9304-43ec44c9d3cb"], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-12-08 14:57:16 -0600
+TripChannel stopped streaming from trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb
+Started GET "/cable" for ::1 at 2017-12-08 14:57:17 -0600
+Started GET "/cable/" [WebSocket] for ::1 at 2017-12-08 14:57:17 -0600
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+TripChannel is transmitting the subscription confirmation
+TripChannel is streaming from trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb
+Started GET "/favicon.ico" for ::1 at 2017-12-08 14:57:17 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/trips/5e596cf0-ff27-4f07-9304-43ec44c9d3cb" for ::1 at 2017-12-08 14:57:26 -0600
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5e596cf0-ff27-4f07-9304-43ec44c9d3cb"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."viewer_uuid" = $1 LIMIT $2[0m  [["viewer_uuid", "5e596cf0-ff27-4f07-9304-43ec44c9d3cb"], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.2ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-12-08 14:57:26 -0600
+TripChannel stopped streaming from trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb
+Started GET "/cable" for ::1 at 2017-12-08 14:57:26 -0600
+Started GET "/cable/" [WebSocket] for ::1 at 2017-12-08 14:57:26 -0600
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+TripChannel is transmitting the subscription confirmation
+TripChannel is streaming from trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb
+Started GET "/trips/5e596cf0-ff27-4f07-9304-43ec44c9d3cb" for ::1 at 2017-12-08 14:57:29 -0600
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"5e596cf0-ff27-4f07-9304-43ec44c9d3cb"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."viewer_uuid" = $1 LIMIT $2[0m  [["viewer_uuid", "5e596cf0-ff27-4f07-9304-43ec44c9d3cb"], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.2ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-12-08 14:57:29 -0600
+TripChannel stopped streaming from trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb
+Started GET "/cable" for ::1 at 2017-12-08 14:57:30 -0600
+Started GET "/cable/" [WebSocket] for ::1 at 2017-12-08 14:57:30 -0600
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+TripChannel is transmitting the subscription confirmation
+TripChannel is streaming from trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb
+Started GET "/" for ::1 at 2017-12-08 14:57:34 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-12-08 14:57:34 -0600
+TripChannel stopped streaming from trip_5e596cf0-ff27-4f07-9304-43ec44c9d3cb
+Started GET "/" for ::1 at 2017-12-08 14:58:31 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-08 14:58:49 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-08 14:58:56 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-08 14:59:21 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-08 14:59:52 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-08 15:00:20 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-08 15:00:40 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-08 15:00:43 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-08 15:00:44 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2017-12-08 15:00:45 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for ::1 at 2017-12-08 15:00:57 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-08 15:01:32 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-08 15:01:36 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-08 15:01:47 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-08 15:01:54 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+

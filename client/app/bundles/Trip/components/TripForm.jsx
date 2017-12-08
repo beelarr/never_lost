@@ -31,7 +31,7 @@ export default class TripForm extends Component {
         }
         return (
             <section className="trip-form-container">
-              <form onSubmit={e => this.handleSubmit(e)}>
+              <form id="form" onSubmit={e => this.handleSubmit(e)}>
                 <label htmlFor="name">Name</label>
                 <input
                     type="text"
