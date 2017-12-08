@@ -19,7 +19,7 @@ export default class TripStore extends Component {
         viewport: {
             lat: 35.5628,
             lon: -83.4984,
-            zoom: 16,
+            zoom: 10,
             bearing: 0,
             pitch: 50,
             width: window.innerWidth,
@@ -82,7 +82,7 @@ export default class TripStore extends Component {
             <MapGL
                 {...viewport}
                 {...this.state.settings}
-                mapStyle="mapbox://styles/beelarr/cjavn1nc41ju82qqybi08mq0g"
+                mapStyle="mapbox://styles/beelarr/cjavmydc30fbc2spgrais0n8w"
                 onViewportChange={this.onViewportChange}
                 mapboxApiAccessToken={token}
             >

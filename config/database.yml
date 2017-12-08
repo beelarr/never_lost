@@ -29,7 +29,7 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: never_lost
+  #username: tag_along
 
   # The password associated with the postgres role (username).
   #password:
@@ -82,4 +82,4 @@ production:
   <<: *default
   database: never_lost_production
   username: never_lost
-  password: <%= ENV['NEVER_LOST_DATABASE_PASSWORD'] %>
+  password: <%= ENV['TAG_ALONG_DATABASE_PASSWORD'] %>
