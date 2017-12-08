@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  root 'trips/new'
+  root 'trips#new'
 
-  resources :trips, only: [:new, :create, :show]
+  get 'trips/new'
 
+  get 'trips/create'
+
+  get 'trips/show'
+
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
