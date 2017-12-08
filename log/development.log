@@ -13896,3 +13896,91 @@ Processing by TripsController#new as HTML
 Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/trips" for ::1 at 2017-12-08 15:25:17 -0600
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"name"=>"b"}}
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "trips" WHERE (created_at < '2017-12-06 21:25:17.427588')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "trips" ("viewer_uuid", "owner_uuid", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["viewer_uuid", "b6a66083-0aa3-43e1-9915-15e1e99d8a44"], ["owner_uuid", "2f2af099-028e-4fd8-b141-290f772ec68e"], ["name", "b"], ["created_at", "2017-12-08 21:25:17.429991"], ["updated_at", "2017-12-08 21:25:17.429991"]]
+  [1m[35m (38.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 44ms (Views: 0.1ms | ActiveRecord: 39.9ms)
+
+
+Started GET "/cable" for ::1 at 2017-12-08 15:25:17 -0600
+Started GET "/cable/" [WebSocket] for ::1 at 2017-12-08 15:25:17 -0600
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+TripChannel is transmitting the subscription confirmation
+TripChannel is streaming from trip_b6a66083-0aa3-43e1-9915-15e1e99d8a44
+Started GET "/trips/b6a66083-0aa3-43e1-9915-15e1e99d8a44" for ::1 at 2017-12-08 15:25:22 -0600
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"b6a66083-0aa3-43e1-9915-15e1e99d8a44"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."viewer_uuid" = $1 LIMIT $2[0m  [["viewer_uuid", "b6a66083-0aa3-43e1-9915-15e1e99d8a44"], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+TripChannel#receive({"owner_uuid"=>"2f2af099-028e-4fd8-b141-290f772ec68e", "lat"=>36.1326028, "lon"=>-86.75666629999999, "captured_at"=>1512768322931})
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "2f2af099-028e-4fd8-b141-290f772ec68e"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_b6a66083-0aa3-43e1-9915-15e1e99d8a44: {:lat=>36.1326028, :lon=>-86.75666629999999, :captured_at=>1512768322931}
+TripChannel transmitting {"lat"=>36.1326028, "lon"=>-86.75666629999999, "captured_at"=>1512768322931} (via streamed from trip_b6a66083-0aa3-43e1-9915-15e1e99d8a44)
+TripChannel#receive({"owner_uuid"=>"2f2af099-028e-4fd8-b141-290f772ec68e", "lat"=>36.1326051, "lon"=>-86.75667519999999, "captured_at"=>1512768334703})
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "2f2af099-028e-4fd8-b141-290f772ec68e"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_b6a66083-0aa3-43e1-9915-15e1e99d8a44: {:lat=>36.1326051, :lon=>-86.75667519999999, :captured_at=>1512768334703}
+TripChannel transmitting {"lat"=>36.1326051, "lon"=>-86.75667519999999, "captured_at"=>1512768334703} (via streamed from trip_b6a66083-0aa3-43e1-9915-15e1e99d8a44)
+TripChannel#receive({"owner_uuid"=>"2f2af099-028e-4fd8-b141-290f772ec68e", "lat"=>36.1326135, "lon"=>-86.75666989999999, "captured_at"=>1512768343996})
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "2f2af099-028e-4fd8-b141-290f772ec68e"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_b6a66083-0aa3-43e1-9915-15e1e99d8a44: {:lat=>36.1326135, :lon=>-86.75666989999999, :captured_at=>1512768343996}
+TripChannel transmitting {"lat"=>36.1326135, "lon"=>-86.75666989999999, "captured_at"=>1512768343996} (via streamed from trip_b6a66083-0aa3-43e1-9915-15e1e99d8a44)
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (5041.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "never_lost_development"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (42.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "checkins" CASCADE[0m
+  [1m[35m (18.3ms)[0m  [1m[35mCREATE TABLE "checkins" ("id" bigserial primary key, "trip_id" integer NOT NULL, "lat" decimal(10,6) NOT NULL, "lon" decimal(10,6) NOT NULL, "captured_at" timestamp NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE  INDEX  "index_checkins_on_trip_id" ON "checkins"  ("trip_id")[0m
+  [1m[35m (26.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "trips" CASCADE[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "trips" ("id" bigserial primary key, "viewer_uuid" character varying NOT NULL, "owner_uuid" character varying NOT NULL, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_owner_uuid" ON "trips"  ("owner_uuid")[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_viewer_uuid" ON "trips"  ("viewer_uuid")[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (11.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "checkins" CASCADE[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "checkins" ("id" bigserial primary key, "trip_id" integer NOT NULL, "lat" decimal(10,6) NOT NULL, "lon" decimal(10,6) NOT NULL, "captured_at" timestamp NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_checkins_on_trip_id" ON "checkins"  ("trip_id")[0m
+  [1m[35m (7.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "trips" CASCADE[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "trips" ("id" bigserial primary key, "viewer_uuid" character varying NOT NULL, "owner_uuid" character varying NOT NULL, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_owner_uuid" ON "trips"  ("owner_uuid")[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_viewer_uuid" ON "trips"  ("viewer_uuid")[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171208170015)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(573628870173871050);[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(573628870173871050)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
