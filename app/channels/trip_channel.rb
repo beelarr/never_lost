@@ -1,4 +1,5 @@
 class TripChannel < ApplicationCable::Channel
+  # subscribing and to and sreaming messages that are broadcast to this channel
   def subscribed
     stream_from "trip_#{params[:room]}"
   end
