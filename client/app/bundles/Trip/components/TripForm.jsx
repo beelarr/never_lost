@@ -1,19 +1,26 @@
 import React, { Component }  from 'react';
 import { observer, inject } from 'mobx-react';
 
-// Injecting our TripStore into the component as a prop
-@inject('TripStore')
-// Makes our class 'react' (re-render) by observing to store changes
-@observer
-export default class TripForm extends Component {
-    // When form is submitted call create trip action passing the name.
-    handleSubmit = e => {
-        e.preventDefault();
-        const name = this.nameInput.value;
-        this.props.TripStore.createTrip(name)
-    }
+
+
+    // Injecting our TripStore into the component as a prop
+    @inject('TripStore')
+    // Makes our class 'react' (re-render) by observing to store changes
+    @observer
+    export default class TripForm extends Component {
+        // When form is submitted call create trip action passing the name.
+        handleSubmit = e => {
+            e.preventDefault();
+            const name = this.nameInput.value;
+            this.props.TripStore.createTrip(name)
+        };
+
+
+
 
     render() {
+
+
         const { TripStore } = this.props;
 
         if (TripStore.trip.name) {
@@ -32,9 +39,9 @@ export default class TripForm extends Component {
         return (
             <section className="trip-form-container">
               <form id="form" onSubmit={e => this.handleSubmit(e)}>
-                <label htmlFor="name">Name</label>
                 <input
                     type="text"
+                    placeholder='Enter your name'
                     id="name"
                     ref={input => this.nameInput = input} required/>
                 <button type="submit">Never Lost</button>

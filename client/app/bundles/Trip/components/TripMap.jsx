@@ -46,6 +46,8 @@ export default class TripStore extends Component {
                 latitude={checkin.lat}>
               <div className="station">
                 <span>{moment(checkin.captured_at).format('MMMM Do YYYY, h:mm:ss a')}</span>
+                <span> Longitude {checkin.lon} </span>
+                <span> Latitude {checkin.lat} </span>
               </div>
             </Marker>
         );
@@ -81,7 +83,7 @@ export default class TripStore extends Component {
             <MapGL
                 {...viewport}
                 {...this.state.settings}
-                mapStyle="mapbox://styles/beelarr/cjawrfmj3lay42rmtpuganlsz"
+                mapStyle="mapbox://styles/beelarr/cjb2k1hc27uxt2sml0e1yff01"
                 onViewportChange={this.onViewportChange}
                 mapboxApiAccessToken={token}
             >
