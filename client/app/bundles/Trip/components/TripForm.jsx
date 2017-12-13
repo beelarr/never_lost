@@ -3,6 +3,7 @@ import { observer, inject } from 'mobx-react';
 
 
 
+
     // Injecting our TripStore into the component as a prop
     @inject('TripStore')
     // Makes our class 'react' (re-render) by observing to store changes
@@ -23,6 +24,8 @@ import { observer, inject } from 'mobx-react';
 
         const { TripStore } = this.props;
 
+        console.log("Trip Store", TripStore);
+
         if (TripStore.trip.name) {
             const trip_url = `${window.location.protocol}//${window.location.host}/trips/${TripStore.trip.viewer_uuid}`;
             return (
@@ -38,7 +41,23 @@ import { observer, inject } from 'mobx-react';
         }
         return (
             <section className="trip-form-container">
-              <form id="form" onSubmit={e => this.handleSubmit(e)}>
+              <form
+                  id="form"
+                  onSubmit={e => this.handleSubmit(e)}
+                  styles={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      flexDirection: 'row',
+                      alignItems: 'center'
+                  }}
+              >
+                  <img
+                      src="../../assets/images/logo.png"
+                      alt="Campfire Logo"
+                      style={{
+                          display: 'flex',
+                      }}
+                  />
                 <input
                     type="text"
                     placeholder='Enter your name'
