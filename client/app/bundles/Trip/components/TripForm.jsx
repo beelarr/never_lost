@@ -1,9 +1,18 @@
 import React, { Component }  from 'react';
 import { observer, inject } from 'mobx-react';
 import {
+    Button,
+    Icon,
     Modal,
-    Button
-} from 'react-materialize';
+    Sidebar,
+    Segment,
+    Menu,
+    Image,
+    Header,
+    Form,
+    Sticky
+}
+    from 'semantic-ui-react';
 
 
 
@@ -16,9 +25,6 @@ import {
 export default class TripForm extends Component {
 
 
-    // showModal = () => {
-    //
-    // };
 
 
     // When form is submitted call create trip action passing the name.
@@ -26,8 +32,8 @@ export default class TripForm extends Component {
         e.preventDefault();
         const name = this.nameInput.value;
         this.props.TripStore.createTrip(name)
-        $('#modal').modal('open');
     };
+
 
 
 
@@ -36,132 +42,60 @@ export default class TripForm extends Component {
 
         const { TripStore } = this.props;
 
-        console.log("Trip Store", TripStore);
 
         if (TripStore.trip.name) {
             const trip_url = `${window.location.protocol}//${window.location.host}/trips/${TripStore.trip.viewer_uuid}`;
             return (
 
-                <Modal
-                    header='Modal Header'
-                    modalOptions={{ dismissible: true }}
-                    id='modal'
-                >
-                    <section className="trip-form-container">
-                        <p>
-                            Tracking <b>{TripStore.trip.name}</b>,
-                            share this link: <a href={trip_url}>Here's Your Link</a>
-                        </p>
+                        <section className="trip-form-container">
+                <Modal trigger={<Button>Get Your Link</Button>} basic size='small'>
+                    <Header icon='map signs'  />
+                    <Modal.Content>
+                            <h3><a href={trip_url}>Here's Your Link, {TripStore.trip.name}!!</a>
+                            </h3>
 
-                    </section>
+                    </Modal.Content>
+
                 </Modal>
+                        </section>
+
             )
 
         }
         return (
-            <section className="trip-form-container">
-                <form
-                    id="form"
-                    onSubmit={e => this.handleSubmit(e)}
-                    styles={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        flexDirection: 'row',
-                        alignItems: 'center'
-                    }}
-                >
+            <Sticky>
+                <div>
+                    <Sidebar.Pushable as={Segment}>
+                        <Sidebar as={Menu} animation='overlay' direction='top' visible={true} inverted>
+                            <Menu.Item name='home'>
+                                <Icon name='home' />
+                                Home
+                            </Menu.Item>
+                            <Menu.Item name='search'>
+                                <Form onSubmit={e => this.handleSubmit(e)}>
+                                    <Form.Field>
+                                        <input
+                                            placeholder='Name'
+                                            id="name"
+                                            ref={input => this.nameInput = input} required/>
+                                    </Form.Field>
 
-                    <input
-                        type="text"
-                        placeholder='Enter your name'
-                        id="name"
-                        ref={input => this.nameInput = input} required/>
-                    <button type="submit">Never Lost</button>
-                </form>
-            </section>
-        )
-    }
-}import React, { Component }  from 'react';
-import { observer, inject } from 'mobx-react';
-import {
-    Modal,
-    Button
-} from 'react-materialize';
-
-
-
-
-
-// Injecting our TripStore into the component as a prop
-@inject('TripStore')
-// Makes our class 'react' (re-render) by observing to store changes
-@observer
-export default class TripForm extends Component {
-
-
-    // showModal = () => {
-    //
-    // };
-
-
-    // When form is submitted call create trip action passing the name.
-    handleSubmit = e => {
-        e.preventDefault();
-        const name = this.nameInput.value;
-        this.props.TripStore.createTrip(name)
-        $('#modal').modal('open');
-    };
+                                    <Button type='submit'>Submit</Button>
+                                </Form>
+                            </Menu.Item>
+                        </Sidebar>
+                        <Sidebar.Pusher>
+                            <Segment basic>
+                                <Header as='h3'>Application Content</Header>
+                                <Image src='/assets/images/wireframe/paragraph.png' />
+                            </Segment>
+                        </Sidebar.Pusher>
+                    </Sidebar.Pushable>
+                </div>
+            </Sticky>
 
 
 
-    render() {
-
-
-        const { TripStore } = this.props;
-
-        console.log("Trip Store", TripStore);
-
-        if (TripStore.trip.name) {
-            const trip_url = `${window.location.protocol}//${window.location.host}/trips/${TripStore.trip.viewer_uuid}`;
-            return (
-
-                <Modal
-                    header='Modal Header'
-                    modalOptions={{ dismissible: true }}
-                    id='modal'
-                >
-                    <section className="trip-form-container">
-                        <p>
-                            Tracking <b>{TripStore.trip.name}</b>,
-                            share this link: <a href={trip_url}>Here's Your Link</a>
-                        </p>
-
-                    </section>
-                </Modal>
-            )
-
-        }
-        return (
-            <section className="trip-form-container">
-                <form
-                    id="form"
-                    onSubmit={e => this.handleSubmit(e)}
-                    styles={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        flexDirection: 'row',
-                        alignItems: 'center'
-                    }}
-                >
-
-                    <input
-                        type="text"
-                        placeholder='Enter your name'
-                        id="name"
-                        ref={input => this.nameInput = input} required/>
-                    <button type="submit">Never Lost</button>
-                </form>
-            </section>
         )
     }
 }

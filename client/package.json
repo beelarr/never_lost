@@ -33,8 +33,8 @@
     "react-dom": "^16.2.0",
     "react-icons": "^2.2.7",
     "react-map-gl": "3.1.4",
-    "react-materialize": "^1.1.1",
     "react-on-rails": "8.0.5",
+    "semantic-ui-react": "^0.77.1",
     "webpack": "^2.3.3",
     "webpack-manifest-plugin": "^1.1.0"
   },
