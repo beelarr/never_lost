@@ -88,8 +88,8 @@ export default class TripStore extends Component {
                 onViewportChange={this.onViewportChange}
                 mapboxApiAccessToken={token}
                 transitionDuration={1000}
-                transitionInterpolator={new FlyToInterpolator()}
-                transitionEasing={d3.easeCubic}
+                // transitionInterpolator={new FlyToInterpolator()}
+                // transitionEasing={d3.easeCubic}
             >
                 { TripStore.checkins.map(this.renderMarker) }
             </MapGL>
