@@ -77,6 +77,7 @@ export default class TripStore extends Component {
     render() {
         const { TripStore } = this.props;
         const viewport = this.viewport();
+        // const flyTo = FlyToInterpolator();
 
         //Renders actual Map, mapping over each checkins in the TripStore
         return (
@@ -86,8 +87,7 @@ export default class TripStore extends Component {
                 mapStyle="mapbox://styles/beelarr/cjb2k1hc27uxt2sml0e1yff01"
                 onViewportChange={this.onViewportChange}
                 mapboxApiAccessToken={token}
-                transitionDuration={1000}
-                // transitionInterpolator={new FlyToInterpolator()}
+                // transitionDuration={1000}
                 // transitionEasing={d3.easeCubic}
             >
                 { TripStore.checkins.map(this.renderMarker) }

@@ -1,5 +1,7 @@
 import React, { Component }  from 'react';
 import { observer, inject } from 'mobx-react';
+import AppBar from 'material-ui/AppBar';
+
 
 
 
@@ -22,6 +24,8 @@ import { observer, inject } from 'mobx-react';
     render() {
 
 
+
+
         const { TripStore } = this.props;
 
         console.log("Trip Store", TripStore);
@@ -29,37 +33,27 @@ import { observer, inject } from 'mobx-react';
         if (TripStore.trip.name) {
             const trip_url = `${window.location.protocol}//${window.location.host}/trips/${TripStore.trip.viewer_uuid}`;
             return (
-                <section className="trip-form-container">
-                  <p>
-                    Tracking <b>{TripStore.trip.name}</b>,
-                    share this link: <a href={trip_url}>Here's Your Link</a>
-                  </p>
 
-                </section>
+
+
+
+
             )
 
         }
         return (
-            <section className="trip-form-container">
-              <form
-                  id="form"
-                  onSubmit={e => this.handleSubmit(e)}
-                  styles={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      flexDirection: 'row',
-                      alignItems: 'center'
-                  }}
-              >
 
-                <input
-                    type="text"
-                    placeholder='Enter your name'
-                    id="name"
-                    ref={input => this.nameInput = input} required/>
-                <button type="submit">Never Lost</button>
-              </form>
-            </section>
+            <AppBar
+                title="Never Lost"
+                iconClassNameRight="muidocs-icon-navigation-expand-more"
+
+            />
+
+
+
+
+
+
         )
     }
 }
