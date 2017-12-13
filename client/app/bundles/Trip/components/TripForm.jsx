@@ -51,13 +51,7 @@ import { observer, inject } from 'mobx-react';
                       alignItems: 'center'
                   }}
               >
-                  <img
-                      src="../../assets/images/logo.png"
-                      alt="Campfire Logo"
-                      style={{
-                          display: 'flex',
-                      }}
-                  />
+
                 <input
                     type="text"
                     placeholder='Enter your name'
