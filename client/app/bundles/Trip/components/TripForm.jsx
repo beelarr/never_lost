@@ -65,32 +65,52 @@ export default class TripForm extends Component {
         return (
             <Sticky>
                 <div>
-                    <Sidebar.Pushable as={Segment}>
-                        <Sidebar as={Menu} animation='overlay' direction='top' visible={true} inverted>
-                            <Menu.Item name='home'>
-                                <Icon name='home' />
-                                Home
+                        <Sidebar as={Menu}
+                                 animation='overlay'
+                                 direction='top'
+                                 visible={true}
+                                 width='ver'
+                                 inverted
+                                 style={{
+                                     height: '2%'
+                                 }}>
+                            <Menu.Item
+                                name='logo'
+                                style={{
+                                    fontFamily: 'Aladin',
+                                    fontSize: 30,
+                                    display: 'flex',
+                                    justifyContent: 'flex-start',
+                                    paddingRight: '70%'
+                                }}
+                            >
+                                <Icon
+                                    name='tree' />
+                                NeverLost
+
                             </Menu.Item>
                             <Menu.Item name='search'>
                                 <Form onSubmit={e => this.handleSubmit(e)}>
-                                    <Form.Field>
+                                    <Form.Field
+                                            style={{
+                                                display:'flex',
+                                                flexDirection: 'row'
+
+                                            }}
+                                    >
                                         <input
                                             placeholder='Name'
                                             id="name"
                                             ref={input => this.nameInput = input} required/>
                                     </Form.Field>
 
-                                    <Button type='submit'>Submit</Button>
                                 </Form>
                             </Menu.Item>
+                            <Menu.Item>
+                                    <Button type='submit'>Submit</Button>
+                            </Menu.Item>
                         </Sidebar>
-                        <Sidebar.Pusher>
-                            <Segment basic>
-                                <Header as='h3'>Application Content</Header>
-                                <Image src='/assets/images/wireframe/paragraph.png' />
-                            </Segment>
-                        </Sidebar.Pusher>
-                    </Sidebar.Pushable>
+
                 </div>
             </Sticky>
 
