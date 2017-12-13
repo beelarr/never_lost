@@ -39,6 +39,7 @@ export default class TripStore extends Component {
 
     // Renders a marker for each checkin location
     renderMarker = checkin => {
+        console.log('checkin', checkin);
         return (
             <Marker
                 key={checkin.captured_at}
@@ -50,13 +51,13 @@ export default class TripStore extends Component {
                 <span> Latitude {checkin.lat} </span>
               </div>
             </Marker>
-        );
+      );
     }
 
     //Call back to handles map dragging, panning ect
     onViewportChange = viewport => this.setState({viewport});
 
-    // Helper function to set viewprt to users last checkin location
+    // Helper function to set viewport to users last checkin location
     viewport = () => {
         const { TripStore } = this.props;
         let latitude = 35.5628;

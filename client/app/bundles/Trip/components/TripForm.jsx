@@ -10,7 +10,8 @@ import {
     Image,
     Header,
     Form,
-    Sticky
+    Sticky,
+    Responsive,
 }
     from 'semantic-ui-react';
 
@@ -47,32 +48,61 @@ export default class TripForm extends Component {
             const trip_url = `${window.location.protocol}//${window.location.host}/trips/${TripStore.trip.viewer_uuid}`;
             return (
 
-                        <section className="trip-form-container">
-                <Modal trigger={<Button>Get Your Link</Button>} basic size='small'>
-                    <Header icon='map signs'  />
+                <Sticky>
+
+                    <Sidebar as={Menu}
+                             animation='overlay'
+                             direction='top'
+                             visible={true}
+                             width='thin'
+                             inverted
+                             style={{
+                                 height: '2%',
+
+                             }}>
+                        <Menu.Item
+                            name='logo'
+                            style={{
+                                fontFamily: 'Aladin',
+                                fontSize: 30,
+                                display: 'flex',
+                                justifyContent: 'flex-start'
+
+                            }}
+                        >
+                            <Icon
+                                name='tree' />
+                            NeverLost
+
+                        </Menu.Item>
+
+                <Modal trigger={<Menu.Item><Button>Get Your Link</Button></Menu.Item>} basic size='small'>
+                    <Header icon='map signs' size='huge'  />
                     <Modal.Content>
-                            <h3><a href={trip_url}>Here's Your Link, {TripStore.trip.name}!!</a>
-                            </h3>
+                            <h1><a href={trip_url}>Here's Your Link, {TripStore.trip.name}!!</a>
+                            </h1>
 
                     </Modal.Content>
 
                 </Modal>
-                        </section>
 
+                    </Sidebar>
+                </Sticky>
             )
 
         }
         return (
             <Sticky>
-                <div>
+
                         <Sidebar as={Menu}
                                  animation='overlay'
                                  direction='top'
                                  visible={true}
-                                 width='ver'
+                                 width='thin'
                                  inverted
                                  style={{
-                                     height: '2%'
+                                     height: '2%',
+
                                  }}>
                             <Menu.Item
                                 name='logo'
@@ -80,8 +110,8 @@ export default class TripForm extends Component {
                                     fontFamily: 'Aladin',
                                     fontSize: 30,
                                     display: 'flex',
-                                    justifyContent: 'flex-start',
-                                    paddingRight: '70%'
+                                    justifyContent: 'flex-start'
+
                                 }}
                             >
                                 <Icon
@@ -89,29 +119,28 @@ export default class TripForm extends Component {
                                 NeverLost
 
                             </Menu.Item>
-                            <Menu.Item name='search'>
-                                <Form onSubmit={e => this.handleSubmit(e)}>
-                                    <Form.Field
-                                            style={{
-                                                display:'flex',
-                                                flexDirection: 'row'
 
-                                            }}
-                                    >
-                                        <input
-                                            placeholder='Name'
-                                            id="name"
-                                            ref={input => this.nameInput = input} required/>
-                                    </Form.Field>
 
-                                </Form>
-                            </Menu.Item>
-                            <Menu.Item>
-                                    <Button type='submit'>Submit</Button>
-                            </Menu.Item>
+                                <Menu.Item name='search'>
+                                    <Form
+                                        onSubmit={e => this.handleSubmit(e)}
+                                        style={{
+                                            display: 'flex',
+                                            justifyContent: 'flex-end'
+
+                                        }}>
+                                        <Form.Field>
+                                            <input
+                                                placeholder='Name'
+                                                id="name"
+                                                ref={input => this.nameInput = input} required/>
+                                        </Form.Field>
+
+                                    </Form>
+                                </Menu.Item>
+
                         </Sidebar>
 
-                </div>
             </Sticky>
 
 
