@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
 import MapGL, { Marker, FlyToInterpolator } from 'react-map-gl';
-import d3 from 'd3-ease';
 import token from '../../../Creds/Creds';
 import moment from 'moment'
 
@@ -90,6 +89,8 @@ export default class TripStore extends Component {
                 transitionDuration={1000}
                 transitionInterpolator={new FlyToInterpolator()}
                 transitionEasing={d3.easeCubic}
+
+
             >
                 { TripStore.checkins.map(this.renderMarker) }
             </MapGL>
