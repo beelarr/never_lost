@@ -81,7 +81,16 @@ span {
     background-color: black !important;
     opacity: .9 !important;
     text-decoration: black !important;
-    margin-top: 35%;
+    margin-top: 35% !important;
+}
+
+.navbar-header {
+    margin-left: .5%;
+}
+
+.navbar-collapse {
+    margin-left: .5%;
+
 }
 
 
