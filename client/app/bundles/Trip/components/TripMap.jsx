@@ -39,14 +39,13 @@ export default class TripStore extends Component {
 
     // Renders a marker for each checkin location
     renderMarker = checkin => {
-        console.log('checkin', checkin);
         return (
             <Marker
                 key={checkin.captured_at}
                 longitude={checkin.lon}
                 latitude={checkin.lat}>
               <div className="station">
-                <span>{moment(checkin.captured_at).format('MMMM Do YYYY, h:mm:ss a')}</span>
+                <span>Check-In: {moment(checkin.captured_at).format('MMMM Do YYYY, h:mm:ss a')}</span>
                 <span> Longitude {checkin.lon} </span>
                 <span> Latitude {checkin.lat} </span>
               </div>

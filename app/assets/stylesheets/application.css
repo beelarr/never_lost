@@ -71,6 +71,8 @@ span {
 
 
 
+
+
 /* MARKER  */
 
 
@@ -94,6 +96,9 @@ span {
     line-height: 24px;
     font-size: 13px;
     white-space: nowrap;
+    position: absolute;
+    bottom: 10%;
+    right: 0.5%
 }
 .station span {
     display: none;
@@ -105,6 +110,8 @@ span {
 .station:hover span {
     display: flex;
     flex-direction: column;
+
+
 }
 
 @keyframes shine {
