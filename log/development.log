@@ -17335,3 +17335,396 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for ::1 at 2017-12-14 13:53:10 -0600
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (113.7ms)
+Completed 500 Internal Server Error in 365ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (
+        WebpackerLite can't find the manifest file: /Users/beelarr/Workspace/backend/capstone/never_lost/public/webpack/development/manifest.json
+        Possible causes:
+          1. You have not invoked webpack.
+          2. You have misconfigured WebpackerLite's config/webpacker_lite.yml file.
+          3. Your Webpack configuration is not creating a manifest.
+):
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'webpack-bundle' %>
+    11:     <!-- Latest compiled and minified CSS -->
+    12:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    13:     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
+  
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___3943539396151944770_70290438870840'
+Started GET "/" for ::1 at 2017-12-14 13:53:13 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (
+        WebpackerLite can't find the manifest file: /Users/beelarr/Workspace/backend/capstone/never_lost/public/webpack/development/manifest.json
+        Possible causes:
+          1. You have not invoked webpack.
+          2. You have misconfigured WebpackerLite's config/webpacker_lite.yml file.
+          3. Your Webpack configuration is not creating a manifest.
+):
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'webpack-bundle' %>
+    11:     <!-- Latest compiled and minified CSS -->
+    12:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    13:     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
+  
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___3943539396151944770_70290456842580'
+Started GET "/" for ::1 at 2017-12-14 13:53:16 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (
+        WebpackerLite can't find the manifest file: /Users/beelarr/Workspace/backend/capstone/never_lost/public/webpack/development/manifest.json
+        Possible causes:
+          1. You have not invoked webpack.
+          2. You have misconfigured WebpackerLite's config/webpacker_lite.yml file.
+          3. Your Webpack configuration is not creating a manifest.
+):
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'webpack-bundle' %>
+    11:     <!-- Latest compiled and minified CSS -->
+    12:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    13:     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
+  
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___3943539396151944770_70290440042980'
+Started GET "/" for ::1 at 2017-12-14 13:53:28 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-14 13:53:31 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (134.1ms)
+Completed 200 OK in 191ms (Views: 177.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-14 13:54:26 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-14 13:55:00 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-14 13:56:03 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2017-12-14 13:56:04 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for ::1 at 2017-12-14 13:58:17 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2017-12-14 13:58:18 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for ::1 at 2017-12-14 13:58:19 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-14 13:58:51 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-14 13:59:36 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2017-12-14 13:59:38 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for ::1 at 2017-12-14 14:00:37 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-14 14:06:20 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (118.6ms)
+Completed 200 OK in 352ms (Views: 344.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/trips" for ::1 at 2017-12-14 14:06:24 -0600
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"name"=>"d"}}
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "trips" WHERE (created_at < '2017-12-12 20:06:24.984369')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "trips" ("viewer_uuid", "owner_uuid", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["viewer_uuid", "869fa43a-ea45-43e3-a9c4-792dcca089f9"], ["owner_uuid", "fd29f74a-3a6a-452a-9d05-c770e4a4a90b"], ["name", "d"], ["created_at", "2017-12-14 20:06:24.999303"], ["updated_at", "2017-12-14 20:06:24.999303"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/cable" for ::1 at 2017-12-14 14:06:25 -0600
+Started GET "/cable/" [WebSocket] for ::1 at 2017-12-14 14:06:25 -0600
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+TripChannel is transmitting the subscription confirmation
+TripChannel is streaming from trip_869fa43a-ea45-43e3-a9c4-792dcca089f9
+Started GET "/trips/869fa43a-ea45-43e3-a9c4-792dcca089f9" for ::1 at 2017-12-14 14:06:27 -0600
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"869fa43a-ea45-43e3-a9c4-792dcca089f9"}
+  [1m[36mTrip Load (0.7ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."viewer_uuid" = $1 LIMIT $2[0m  [["viewer_uuid", "869fa43a-ea45-43e3-a9c4-792dcca089f9"], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45ms (Views: 17.5ms | ActiveRecord: 7.6ms)
+
+
+TripChannel#receive({"owner_uuid"=>"fd29f74a-3a6a-452a-9d05-c770e4a4a90b", "lat"=>36.1325548, "lon"=>-86.75667849999999, "captured_at"=>1513281988968})
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "fd29f74a-3a6a-452a-9d05-c770e4a4a90b"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_869fa43a-ea45-43e3-a9c4-792dcca089f9: {:lat=>36.1325548, :lon=>-86.75667849999999, :captured_at=>1513281988968}
+TripChannel transmitting {"lat"=>36.1325548, "lon"=>-86.75667849999999, "captured_at"=>1513281988968} (via streamed from trip_869fa43a-ea45-43e3-a9c4-792dcca089f9)
+TripChannel#receive({"owner_uuid"=>"fd29f74a-3a6a-452a-9d05-c770e4a4a90b", "lat"=>36.132557299999995, "lon"=>-86.7566356, "captured_at"=>1513281998215})
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "fd29f74a-3a6a-452a-9d05-c770e4a4a90b"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_869fa43a-ea45-43e3-a9c4-792dcca089f9: {:lat=>36.132557299999995, :lon=>-86.7566356, :captured_at=>1513281998215}
+TripChannel transmitting {"lat"=>36.132557299999995, "lon"=>-86.7566356, "captured_at"=>1513281998215} (via streamed from trip_869fa43a-ea45-43e3-a9c4-792dcca089f9)
+TripChannel#receive({"owner_uuid"=>"fd29f74a-3a6a-452a-9d05-c770e4a4a90b", "lat"=>36.1325505, "lon"=>-86.75665389999999, "captured_at"=>1513282007223})
+  [1m[36mTrip Load (0.5ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "fd29f74a-3a6a-452a-9d05-c770e4a4a90b"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_869fa43a-ea45-43e3-a9c4-792dcca089f9: {:lat=>36.1325505, :lon=>-86.75665389999999, :captured_at=>1513282007223}
+TripChannel transmitting {"lat"=>36.1325505, "lon"=>-86.75665389999999, "captured_at"=>1513282007223} (via streamed from trip_869fa43a-ea45-43e3-a9c4-792dcca089f9)
+TripChannel#receive({"owner_uuid"=>"fd29f74a-3a6a-452a-9d05-c770e4a4a90b", "lat"=>36.132554299999995, "lon"=>-86.7566717, "captured_at"=>1513282016284})
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "fd29f74a-3a6a-452a-9d05-c770e4a4a90b"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_869fa43a-ea45-43e3-a9c4-792dcca089f9: {:lat=>36.132554299999995, :lon=>-86.7566717, :captured_at=>1513282016284}
+TripChannel transmitting {"lat"=>36.132554299999995, "lon"=>-86.7566717, "captured_at"=>1513282016284} (via streamed from trip_869fa43a-ea45-43e3-a9c4-792dcca089f9)
+Started GET "/trips/869fa43a-ea45-43e3-a9c4-792dcca089f9" for ::1 at 2017-12-14 14:07:00 -0600
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"869fa43a-ea45-43e3-a9c4-792dcca089f9"}
+  [1m[36mTrip Load (0.6ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."viewer_uuid" = $1 LIMIT $2[0m  [["viewer_uuid", "869fa43a-ea45-43e3-a9c4-792dcca089f9"], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (145.1ms)
+Completed 200 OK in 328ms (Views: 320.6ms | ActiveRecord: 0.8ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-12-14 14:07:00 -0600
+TripChannel stopped streaming from trip_869fa43a-ea45-43e3-a9c4-792dcca089f9
+Started GET "/cable" for ::1 at 2017-12-14 14:07:01 -0600
+Started GET "/cable/" [WebSocket] for ::1 at 2017-12-14 14:07:01 -0600
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+TripChannel is transmitting the subscription confirmation
+TripChannel is streaming from trip_869fa43a-ea45-43e3-a9c4-792dcca089f9
+Started GET "/" for ::1 at 2017-12-14 14:07:05 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-14 14:07:09 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-12-14 14:07:10 -0600
+TripChannel stopped streaming from trip_869fa43a-ea45-43e3-a9c4-792dcca089f9
+Started POST "/trips" for ::1 at 2017-12-14 14:07:16 -0600
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"name"=>"d"}}
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "trips" WHERE (created_at < '2017-12-12 20:07:16.696257')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "trips" ("viewer_uuid", "owner_uuid", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["viewer_uuid", "a55a3073-170b-44a6-8a73-1b5fccabb5ed"], ["owner_uuid", "a3e91a3e-9346-42d7-86f7-dc2293541309"], ["name", "d"], ["created_at", "2017-12-14 20:07:16.698829"], ["updated_at", "2017-12-14 20:07:16.698829"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/cable" for ::1 at 2017-12-14 14:07:16 -0600
+Started GET "/cable/" [WebSocket] for ::1 at 2017-12-14 14:07:16 -0600
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+TripChannel is transmitting the subscription confirmation
+TripChannel is streaming from trip_a55a3073-170b-44a6-8a73-1b5fccabb5ed
+TripChannel#receive({"owner_uuid"=>"a3e91a3e-9346-42d7-86f7-dc2293541309", "lat"=>36.1325755, "lon"=>-86.75665959999999, "captured_at"=>1513282040670})
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "a3e91a3e-9346-42d7-86f7-dc2293541309"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_a55a3073-170b-44a6-8a73-1b5fccabb5ed: {:lat=>36.1325755, :lon=>-86.75665959999999, :captured_at=>1513282040670}
+TripChannel transmitting {"lat"=>36.1325755, "lon"=>-86.75665959999999, "captured_at"=>1513282040670} (via streamed from trip_a55a3073-170b-44a6-8a73-1b5fccabb5ed)
+TripChannel#receive({"owner_uuid"=>"a3e91a3e-9346-42d7-86f7-dc2293541309", "lat"=>36.132576, "lon"=>-86.7566612, "captured_at"=>1513282049710})
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "a3e91a3e-9346-42d7-86f7-dc2293541309"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_a55a3073-170b-44a6-8a73-1b5fccabb5ed: {:lat=>36.132576, :lon=>-86.7566612, :captured_at=>1513282049710}
+TripChannel transmitting {"lat"=>36.132576, "lon"=>-86.7566612, "captured_at"=>1513282049710} (via streamed from trip_a55a3073-170b-44a6-8a73-1b5fccabb5ed)
+TripChannel#receive({"owner_uuid"=>"a3e91a3e-9346-42d7-86f7-dc2293541309", "lat"=>36.1325692, "lon"=>-86.75667659999999, "captured_at"=>1513282058719})
+  [1m[36mTrip Load (0.5ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "a3e91a3e-9346-42d7-86f7-dc2293541309"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_a55a3073-170b-44a6-8a73-1b5fccabb5ed: {:lat=>36.1325692, :lon=>-86.75667659999999, :captured_at=>1513282058719}
+TripChannel transmitting {"lat"=>36.1325692, "lon"=>-86.75667659999999, "captured_at"=>1513282058719} (via streamed from trip_a55a3073-170b-44a6-8a73-1b5fccabb5ed)
+TripChannel#receive({"owner_uuid"=>"a3e91a3e-9346-42d7-86f7-dc2293541309", "lat"=>36.132569700000005, "lon"=>-86.75665839999999, "captured_at"=>1513282067698})
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "a3e91a3e-9346-42d7-86f7-dc2293541309"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_a55a3073-170b-44a6-8a73-1b5fccabb5ed: {:lat=>36.132569700000005, :lon=>-86.75665839999999, :captured_at=>1513282067698}
+TripChannel transmitting {"lat"=>36.132569700000005, "lon"=>-86.75665839999999, "captured_at"=>1513282067698} (via streamed from trip_a55a3073-170b-44a6-8a73-1b5fccabb5ed)
+TripChannel#receive({"owner_uuid"=>"a3e91a3e-9346-42d7-86f7-dc2293541309", "lat"=>36.132565, "lon"=>-86.7566658, "captured_at"=>1513282076762})
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "a3e91a3e-9346-42d7-86f7-dc2293541309"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_a55a3073-170b-44a6-8a73-1b5fccabb5ed: {:lat=>36.132565, :lon=>-86.7566658, :captured_at=>1513282076762}
+TripChannel transmitting {"lat"=>36.132565, "lon"=>-86.7566658, "captured_at"=>1513282076762} (via streamed from trip_a55a3073-170b-44a6-8a73-1b5fccabb5ed)
+Started GET "/" for ::1 at 2017-12-14 14:07:59 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-12-14 14:07:59 -0600
+TripChannel stopped streaming from trip_a55a3073-170b-44a6-8a73-1b5fccabb5ed
+Started POST "/trips" for ::1 at 2017-12-14 14:08:04 -0600
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"name"=>"d"}}
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "trips" WHERE (created_at < '2017-12-12 20:08:04.767111')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "trips" ("viewer_uuid", "owner_uuid", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["viewer_uuid", "2660a262-8534-4ce1-a7dc-e7f05843650f"], ["owner_uuid", "8a171d5c-014c-40c3-8301-681754dc7d9a"], ["name", "d"], ["created_at", "2017-12-14 20:08:04.770469"], ["updated_at", "2017-12-14 20:08:04.770469"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/cable" for ::1 at 2017-12-14 14:08:04 -0600
+Started GET "/cable/" [WebSocket] for ::1 at 2017-12-14 14:08:04 -0600
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+TripChannel is transmitting the subscription confirmation
+TripChannel is streaming from trip_2660a262-8534-4ce1-a7dc-e7f05843650f
+Started GET "/trips/2660a262-8534-4ce1-a7dc-e7f05843650f" for ::1 at 2017-12-14 14:08:06 -0600
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2660a262-8534-4ce1-a7dc-e7f05843650f"}
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."viewer_uuid" = $1 LIMIT $2[0m  [["viewer_uuid", "2660a262-8534-4ce1-a7dc-e7f05843650f"], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 0.4ms)
+
+
+TripChannel#receive({"owner_uuid"=>"8a171d5c-014c-40c3-8301-681754dc7d9a", "lat"=>36.1325493, "lon"=>-86.75667639999999, "captured_at"=>1513282088774})
+  [1m[36mTrip Load (0.7ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "8a171d5c-014c-40c3-8301-681754dc7d9a"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_2660a262-8534-4ce1-a7dc-e7f05843650f: {:lat=>36.1325493, :lon=>-86.75667639999999, :captured_at=>1513282088774}
+TripChannel transmitting {"lat"=>36.1325493, "lon"=>-86.75667639999999, "captured_at"=>1513282088774} (via streamed from trip_2660a262-8534-4ce1-a7dc-e7f05843650f)
+TripChannel#receive({"owner_uuid"=>"8a171d5c-014c-40c3-8301-681754dc7d9a", "lat"=>36.1325676, "lon"=>-86.7566642, "captured_at"=>1513282097884})
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "8a171d5c-014c-40c3-8301-681754dc7d9a"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_2660a262-8534-4ce1-a7dc-e7f05843650f: {:lat=>36.1325676, :lon=>-86.7566642, :captured_at=>1513282097884}
+TripChannel transmitting {"lat"=>36.1325676, "lon"=>-86.7566642, "captured_at"=>1513282097884} (via streamed from trip_2660a262-8534-4ce1-a7dc-e7f05843650f)

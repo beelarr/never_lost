@@ -69,6 +69,21 @@ span {
     padding-bottom: 1%
 }
 
+/*.modal-dialog:before {*/
+    /*background-color: black !important;*/
+    /*opacity: .8 !important;*/
+    /*height: 100vh !important;*/
+    /*width: 100vw !important;*/
+    /*filter: blur(1px) !important;*/
+/*}*/
+
+.modal-dialog  {
+    background-color: black !important;
+    opacity: .9 !important;
+    text-decoration: black !important;
+    margin-top: 35%;
+}
+
 
 
 
@@ -112,6 +127,9 @@ span {
     flex-direction: column;
 
 
+}
+.scrolling {
+    display: none !important;
 }
 
 @keyframes shine {

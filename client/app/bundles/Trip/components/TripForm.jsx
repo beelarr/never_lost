@@ -3,7 +3,6 @@ import { observer, inject } from 'mobx-react';
 import {
     Button,
     Icon,
-    Modal,
     Sidebar,
     Segment,
     Menu,
@@ -15,7 +14,7 @@ import {
 }
     from 'semantic-ui-react';
 
-import { Navbar, Nav, NavItem, FormGroup, FormControl } from 'react-bootstrap/lib/';
+import { Navbar, Nav, NavItem, FormGroup, FormControl, Modal } from 'react-bootstrap/lib/';
 
 
 
@@ -27,7 +26,7 @@ import { Navbar, Nav, NavItem, FormGroup, FormControl } from 'react-bootstrap/li
 @observer
 export default class TripForm extends Component {
 
-    state = {open:false}
+    state = {open: false};
 
 
     // When form is submitted call create trip action passing the name.
@@ -77,20 +76,24 @@ export default class TripForm extends Component {
                     <Navbar.Collapse>
 
 
-                <Modal open={this.state.open} basic size='small'>
-                    <Header icon='map signs' size='huge'  />
-                    <Modal.Content>
+                <Modal.Dialog
+                    inverse
+                    open={this.state.open}>
+                    <Modal.Header>
+                        <Icon name='map signs' size='huge'  />
+                    </Modal.Header>
+                    <Modal.Body>
                             <h1><a href={trip_url}>Here's Your Link to Share, {TripStore.trip.name}!!</a></h1>
-                    </Modal.Content>
-
-                </Modal>
-                    </Navbar.Collapse>
+                    </Modal.Body>
+                </Modal.Dialog>
+                </Navbar.Collapse>
                 </Navbar>
 
             )
 
         }
         return (
+
             <Navbar
                 inverse
                 collapseOnSelect
