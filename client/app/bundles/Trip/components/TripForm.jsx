@@ -78,6 +78,7 @@ export default class TripForm extends Component {
 
                 <Modal.Dialog
                     inverse
+                    href={trip_url}
                     open={this.state.open}>
                     <Modal.Header>
                         <Icon name='map signs' size='huge'  />
