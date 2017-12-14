@@ -69,6 +69,23 @@ span {
     padding-bottom: 1%
 }
 
+/*.modal-dialog:before {*/
+    /*background-color: black !important;*/
+    /*opacity: .8 !important;*/
+    /*height: 100vh !important;*/
+    /*width: 100vw !important;*/
+    /*filter: blur(1px) !important;*/
+/*}*/
+
+.modal-dialog  {
+    background-color: black !important;
+    opacity: .9 !important;
+    text-decoration: black !important;
+    margin-top: 35%;
+}
+
+
+
 
 
 /* MARKER  */
@@ -94,6 +111,9 @@ span {
     line-height: 24px;
     font-size: 13px;
     white-space: nowrap;
+    position: absolute;
+    bottom: 10%;
+    right: 0.5%
 }
 .station span {
     display: none;
@@ -105,6 +125,11 @@ span {
 .station:hover span {
     display: flex;
     flex-direction: column;
+
+
+}
+.scrolling {
+    display: none !important;
 }
 
 @keyframes shine {

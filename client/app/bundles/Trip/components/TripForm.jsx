@@ -3,7 +3,6 @@ import { observer, inject } from 'mobx-react';
 import {
     Button,
     Icon,
-    Modal,
     Sidebar,
     Segment,
     Menu,
@@ -15,6 +14,8 @@ import {
 }
     from 'semantic-ui-react';
 
+import { Navbar, Nav, NavItem, FormGroup, FormControl, Modal } from 'react-bootstrap/lib/';
+
 
 
 
@@ -25,14 +26,17 @@ import {
 @observer
 export default class TripForm extends Component {
 
-
+    state = {open: false};
 
 
     // When form is submitted call create trip action passing the name.
     handleSubmit = e => {
-        e.preventDefault();
-        const name = this.nameInput.value;
-        this.props.TripStore.createTrip(name)
+        if (e.key == 'Enter') {
+            e.preventDefault();
+            const name = this.nameInput.value;
+            this.props.TripStore.createTrip(name)
+            this.setState({open:true})
+        }
     };
 
 
@@ -47,104 +51,89 @@ export default class TripForm extends Component {
         if (TripStore.trip.name) {
             const trip_url = `${window.location.protocol}//${window.location.host}/trips/${TripStore.trip.viewer_uuid}`;
             return (
-
-                <Sticky>
-
-                    <Sidebar as={Menu}
-                             animation='overlay'
-                             direction='top'
-                             visible={true}
-                             width='thin'
-                             inverted
-                             style={{
-                                 height: '2%',
-
-                             }}>
-                        <Menu.Item
-                            name='logo'
-                            style={{
-                                fontFamily: 'Aladin',
-                                fontSize: 30,
-                                display: 'flex',
-                                justifyContent: 'flex-start'
-
-                            }}
-                        >
-                            <Icon
-                                name='tree' />
-                            NeverLost
-
-                        </Menu.Item>
-
-                <Modal trigger={<Menu.Item><Button>Get Your Link</Button></Menu.Item>} basic size='small'>
-                    <Header icon='map signs' size='huge'  />
-                    <Modal.Content>
-                            <h1><a href={trip_url}>Here's Your Link, {TripStore.trip.name}!!</a>
-                            </h1>
-
-                    </Modal.Content>
-
-                </Modal>
-
-                    </Sidebar>
-                </Sticky>
-            )
-
-        }
-        return (
-            <Sticky>
-
-                        <Sidebar as={Menu}
-                                 animation='overlay'
-                                 direction='top'
-                                 visible={true}
-                                 width='thin'
-                                 inverted
-                                 style={{
-                                     height: '2%',
-
-                                 }}>
-                            <Menu.Item
-                                name='logo'
+                <Navbar
+                    inverse
+                    collapseOnSelect
+                    style={{
+                        marginBottom: 0
+                    }}
+                >
+                    <Navbar.Header>
+                        <Navbar.Brand>
+                            <a
+                                href="/"
                                 style={{
                                     fontFamily: 'Aladin',
-                                    fontSize: 30,
-                                    display: 'flex',
-                                    justifyContent: 'flex-start'
-
+                                    fontSize: 35,
                                 }}
                             >
                                 <Icon
                                     name='tree' />
-                                NeverLost
-
-                            </Menu.Item>
-
-
-                                <Menu.Item name='search'>
-                                    <Form
-                                        onSubmit={e => this.handleSubmit(e)}
-                                        style={{
-                                            display: 'flex',
-                                            justifyContent: 'flex-end'
-
-                                        }}>
-                                        <Form.Field>
-                                            <input
-                                                placeholder='Name'
-                                                id="name"
-                                                ref={input => this.nameInput = input} required/>
-                                        </Form.Field>
-
-                                    </Form>
-                                </Menu.Item>
-
-                        </Sidebar>
-
-            </Sticky>
+                                Never Lost</a>
+                        </Navbar.Brand>
+                        <Navbar.Toggle />
+                    </Navbar.Header>
+                    <Navbar.Collapse>
 
 
+                <Modal.Dialog
+                    inverse
+                    open={this.state.open}>
+                    <Modal.Header>
+                        <Icon name='map signs' size='huge'  />
+                    </Modal.Header>
+                    <Modal.Body>
+                            <h1><a href={trip_url}>Here's Your Link to Share, {TripStore.trip.name}!!</a></h1>
+                    </Modal.Body>
+                </Modal.Dialog>
+                </Navbar.Collapse>
+                </Navbar>
 
+            )
+
+        }
+        return (
+
+            <Navbar
+                inverse
+                collapseOnSelect
+                style={{
+                    marginBottom: 0
+                }}
+
+            >
+                <Navbar.Header>
+                    <Navbar.Brand>
+                        <a
+                            href="/"
+                            style={{
+                                fontFamily: 'Aladin',
+                                fontSize: 35,
+                            }}
+                        >
+                            <Icon
+                                name='tree' />
+                            Never Lost</a>
+                    </Navbar.Brand>
+                    <Navbar.Toggle />
+                </Navbar.Header>
+                <Navbar.Collapse>
+                    <Navbar.Form
+                        pullRight
+
+                    >
+                        <FormGroup>
+                            <FormControl
+                                type="text"
+                                placeholder="Name"
+                                inputRef={input => this.nameInput = input} required
+                                onKeyPress={e => this.handleSubmit(e)}/>
+                            {' '}
+
+                            </FormGroup>
+                    </Navbar.Form>
+                </Navbar.Collapse>
+            </Navbar>
         )
     }
 }
