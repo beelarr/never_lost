@@ -62,7 +62,7 @@ export default class TripForm extends Component {
                     <Navbar.Header>
                         <Navbar.Brand>
                             <a
-                                href="#"
+                                href="/"
                                 style={{
                                     fontFamily: 'Aladin',
                                     fontSize: 35,
@@ -102,7 +102,7 @@ export default class TripForm extends Component {
                 <Navbar.Header>
                     <Navbar.Brand>
                         <a
-                            href="#"
+                            href="/"
                             style={{
                                 fontFamily: 'Aladin',
                                 fontSize: 35,
