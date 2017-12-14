@@ -45,9 +45,11 @@ export default class TripStore extends Component {
                 longitude={checkin.lon}
                 latitude={checkin.lat}>
               <div className="station">
-                <span>Check-In: {moment(checkin.captured_at).format('MMMM Do YYYY, h:mm:ss a')}</span>
-                <span> Longitude {checkin.lon} </span>
-                <span> Latitude {checkin.lat} </span>
+                 <span>Check-In </span>
+                 <span>Date:  {moment(checkin.captured_at).format('MMMM Do YYYY')}</span>
+                 <span>Time:  {moment(checkin.captured_at).format('h:mm:ss a')}</span>
+                 <span>Longitude: {checkin.lon} </span>
+                <span>Latitude: {checkin.lat} </span>
               </div>
             </Marker>
       );
