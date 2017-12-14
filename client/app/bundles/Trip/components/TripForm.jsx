@@ -125,7 +125,7 @@ export default class TripForm extends Component {
                         <FormGroup>
                             <FormControl
                                 type="text"
-                                placeholder="Name"
+                                placeholder="Trail Name"
                                 inputRef={input => this.nameInput = input} required
                                 onKeyPress={e => this.handleSubmit(e)}/>
                             {' '}
