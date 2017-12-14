@@ -1,18 +1,6 @@
 import React, { Component }  from 'react';
 import { observer, inject } from 'mobx-react';
-import {
-    Button,
-    Icon,
-    Sidebar,
-    Segment,
-    Menu,
-    Image,
-    Header,
-    Form,
-    Sticky,
-    Responsive,
-}
-    from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 
 import { Navbar, Nav, NavItem, FormGroup, FormControl, Modal } from 'react-bootstrap/lib/';
 
@@ -44,9 +32,7 @@ export default class TripForm extends Component {
 
     render() {
 
-
         const { TripStore } = this.props;
-
 
         if (TripStore.trip.name) {
             const trip_url = `${window.location.protocol}//${window.location.host}/trips/${TripStore.trip.viewer_uuid}`;
@@ -54,10 +40,7 @@ export default class TripForm extends Component {
                 <Navbar
                     inverse
                     collapseOnSelect
-                    style={{
-                        marginBottom: 0
-                    }}
-                >
+                    style={{ marginBottom: 0 }}>
                     <Navbar.Header>
                         <Navbar.Brand>
                             <a
@@ -65,53 +48,42 @@ export default class TripForm extends Component {
                                 style={{
                                     fontFamily: 'Aladin',
                                     fontSize: 35,
-                                }}
-                            >
-                                <Icon
-                                    name='tree' />
-                                Never Lost</a>
+                                }}>
+                                <Icon name='tree' />
+                                Never Lost
+                            </a>
                         </Navbar.Brand>
                         <Navbar.Toggle />
                     </Navbar.Header>
                     <Navbar.Collapse>
-
-
-                <Modal.Dialog
-                    inverse
-                    href={trip_url}
-                    open={this.state.open}>
-                    <Modal.Header>
-                        <Icon name='map signs' size='huge'  />
-                    </Modal.Header>
-                    <Modal.Body
-                        >
-                            <h1 style={{
-                                fontFamily: 'Ubuntu',
-
-                            }}>{TripStore.trip.name}, you are now being tracked!!<br/><a
-                                style={{
-                                    textDecoration: 'none'
-                                }}
-                                href={trip_url}
-                            >Click for your link to share.</a></h1>
-                    </Modal.Body>
-                </Modal.Dialog>
-                </Navbar.Collapse>
+                        <Modal.Dialog
+                            inverse
+                            href={trip_url}
+                            open={this.state.open}>
+                            <Modal.Header>
+                                <Icon name='map signs' size='huge'  />
+                            </Modal.Header>
+                            <Modal.Body>
+                            <h1 style={{ fontFamily: 'Ubuntu'}}>
+                                {TripStore.trip.name}, you are now being tracked!!<br/>
+                                <a
+                                style={{ textDecoration: 'none' }}
+                                href={ trip_url }
+                                >
+                                    Click for your link to share.</a>
+                            </h1>
+                            </Modal.Body>
+                        </Modal.Dialog>
+                    </Navbar.Collapse>
                 </Navbar>
-
             )
-
         }
         return (
 
             <Navbar
                 inverse
                 collapseOnSelect
-                style={{
-                    marginBottom: 0
-                }}
-
-            >
+                style={{ marginBottom: 0 }}>
                 <Navbar.Header>
                     <Navbar.Brand>
                         <a
@@ -119,30 +91,23 @@ export default class TripForm extends Component {
                             style={{
                                 fontFamily: 'Aladin',
                                 fontSize: 35,
-                            }}
-                        >
-                            <Icon
-                                name='tree' />
-                            Never Lost</a>
+                            }}>
+                            <Icon name='tree' />
+                            Never Lost
+                        </a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
-                    <Navbar.Form
-                        pullRight
-
-                    >
+                    <Navbar.Form pullRight>
                         <FormGroup>
                             <FormControl
                                 type="text"
                                 placeholder="Trail Name"
-                                style={{
-                                    fontFamily: 'Aladin'
-                                }}
+                                style={{ fontFamily: 'Aladin' }}
                                 inputRef={input => this.nameInput = input} required
                                 onKeyPress={e => this.handleSubmit(e)}/>
                             {' '}
-
                             </FormGroup>
                     </Navbar.Form>
                 </Navbar.Collapse>

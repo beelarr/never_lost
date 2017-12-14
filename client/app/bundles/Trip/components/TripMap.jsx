@@ -51,7 +51,7 @@ export default class TripStore extends Component {
               </div>
             </Marker>
       );
-    }
+    };
 
     //Call back to handles map dragging, panning ect
     onViewportChange = viewport => this.setState({viewport});
@@ -72,7 +72,7 @@ export default class TripStore extends Component {
             latitude,
             longitude
         };
-    }
+    };
 
     render() {
         const { TripStore } = this.props;
@@ -89,7 +89,7 @@ export default class TripStore extends Component {
                 mapboxApiAccessToken={token}
                 // transitionDuration={1000}
                 // transitionEasing={d3.easeCubic}
-            >
+                >
                 { TripStore.checkins.map(this.renderMarker) }
             </MapGL>
         );

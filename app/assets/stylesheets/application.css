@@ -47,7 +47,6 @@ label {
 }
 
 
-
 p {
   margin: 0px;
   padding: 10px;
@@ -111,6 +110,7 @@ span {
     animation-duration: 5s;
     animation-iteration-count: 2;
 }
+
 .station {
     border-radius: 20px;
     padding-right: 12px;
@@ -121,19 +121,21 @@ span {
     white-space: nowrap;
 
 }
+
 .station span {
     display: none;
 }
+
 .station:hover {
     background: rgba(0,0,0,0.8);
     color: #fff;
 }
+
 .station:hover span {
     display: flex;
     flex-direction: column;
-
-
 }
+
 .scrolling {
     display: none !important;
 }
@@ -142,9 +144,11 @@ span {
     0%, 40% {
         box-shadow: 0px 0px 0px 0px yellow;
     }
+
     40% {
         box-shadow: 0px 0px 0px 0px #18FFFF;
     }
+
     100% {
         box-shadow: 0px 0px 0px 70px rgba(52, 254, 254, 0);
     }

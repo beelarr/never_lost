@@ -19,7 +19,7 @@ class TripStore {
         this.tripApi.subscribeTrip(trip.viewer_uuid, checkin => {
             this.recordCheckin(checkin)
         })
-    }
+    };
 
     @action createTrip = name => {
         this.tripApi.createTrip(name)
@@ -30,7 +30,7 @@ class TripStore {
                 });
                 this.postCheckin();
             });
-    }
+    };
 
     @action recordCheckin = checkin => {
         this.checkins.push({
@@ -39,7 +39,8 @@ class TripStore {
             captured_at: parseInt(checkin.captured_at)
         });
         this.checkins = this.checkins.slice(-250);
-    }
+    };
+
     // sends users location every 10 sec or what ever setTimeout says
     @action postCheckin = () => {
         navigator.geolocation.getCurrentPosition(position => {

@@ -14,11 +14,12 @@ export default class TripApi {
         'Content-Type': 'application/json'
       }),
       body: JSON.stringify({
-        trip: {name}
+          trip: {name}
       })
     }).
     then(response => response.json());
-  }
+  };
+
     // callback is called once every time the server send realtime data to us
     // to consume
   subscribeTrip = (viewer_uuid, callback) => {
@@ -28,7 +29,7 @@ export default class TripApi {
     }, {
       received: callback
     });
-  }
+  };
 
   postCheckin = (owner_uuid, lat, lon, captured_at) => {
     this.subscription.send({
