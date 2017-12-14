@@ -13,34 +13,25 @@
  *= require_tree .
  *= require_self
  */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Tinos', sans-serif;
-  font-size: 18px;
-}
-
-.trip-form-container {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  z-index: 100;
-  padding: 15px;
-  background-color: black;
-  opacity: .98;
-}
-
-
 a {
   text-decoration: none;
   color: whitesmoke;
 }
 
-label {
-  margin-right: 15px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Aladin', sans-serif;
+  font-size: 18px;
 }
+
+button {
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid #B0BEC5;
+  font-family: 'Aladin', sans-serif;
+}
+
 
 input {
   padding: 10px;
@@ -48,16 +39,14 @@ input {
   margin-right: 15px;
   border: 1px solid #B0BEC5;
   opacity: .8;
-  font-family: 'Tinos', sans-serif;
-
+  font-family: 'Aladin', sans-serif;
 }
 
-button {
-  padding: 10px;
-  border-radius: 2px;
-  border: 1px solid #B0BEC5;
-  font-family: 'Tinos', sans-serif;
+label {
+  margin-right: 15px;
 }
+
+
 
 p {
   margin: 0px;
@@ -93,6 +82,16 @@ span {
 
 }
 
+.trip-form-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 100;
+  padding: 15px;
+  background-color: black;
+  opacity: .98;
+}
 
 
 

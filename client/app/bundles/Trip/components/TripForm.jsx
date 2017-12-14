@@ -82,8 +82,17 @@ export default class TripForm extends Component {
                     <Modal.Header>
                         <Icon name='map signs' size='huge'  />
                     </Modal.Header>
-                    <Modal.Body>
-                            <h1><a href={trip_url}>Here's Your Link to Share, {TripStore.trip.name}!!</a></h1>
+                    <Modal.Body
+                        >
+                            <h1 style={{
+                                fontFamily: 'Ubuntu',
+
+                            }}>{TripStore.trip.name}, you are now being tracked!!<br/><a
+                                style={{
+                                    textDecoration: 'none'
+                                }}
+                                href={trip_url}
+                            >Click for your link to share.</a></h1>
                     </Modal.Body>
                 </Modal.Dialog>
                 </Navbar.Collapse>
@@ -126,6 +135,9 @@ export default class TripForm extends Component {
                             <FormControl
                                 type="text"
                                 placeholder="Trail Name"
+                                style={{
+                                    fontFamily: 'Aladin'
+                                }}
                                 inputRef={input => this.nameInput = input} required
                                 onKeyPress={e => this.handleSubmit(e)}/>
                             {' '}
