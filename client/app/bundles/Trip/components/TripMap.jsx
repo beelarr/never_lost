@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
 import MapGL, { Marker, FlyToInterpolator } from 'react-map-gl';
 import token from '../../../Creds/Creds';
-import moment from 'moment'
+import moment from 'moment';
+import DevTools from 'mobx-react-devtools';
+
 
 if (!token) {
     throw new Error('That token is bad');
@@ -12,13 +14,13 @@ if (!token) {
 
 @inject('TripStore')
 @observer
-export default class TripStore extends Component {
+export default class TripMap extends Component {
 
     state = {
         viewport: {
             lat: 35.5628,
             lon: -83.4984,
-            zoom: 10,
+            zoom: 4,
             bearing: 0,
             pitch: 60,
             width: window.innerWidth,
@@ -93,6 +95,7 @@ export default class TripStore extends Component {
                 // transitionEasing={d3.easeCubic}
                 >
                 { TripStore.checkins.map(this.renderMarker) }
+            <DevTools/>
             </MapGL>
         );
     }

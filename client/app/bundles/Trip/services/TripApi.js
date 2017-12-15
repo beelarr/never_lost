@@ -30,7 +30,7 @@ export default class TripApi {
       received: callback
     });
   };
-
+ // Sends Broadcast out to subscribers
   postCheckin = (owner_uuid, lat, lon, captured_at) => {
     this.subscription.send({
       owner_uuid,
