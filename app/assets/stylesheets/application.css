@@ -107,7 +107,7 @@ span {
     border-radius: 10px;
     margin: 0 8px;
     animation-name: shine;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-iteration-count: 2;
 }
 
