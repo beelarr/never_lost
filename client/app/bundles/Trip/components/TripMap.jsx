@@ -3,7 +3,7 @@ import { observer, inject } from 'mobx-react';
 import MapGL, { Marker, FlyToInterpolator } from 'react-map-gl';
 import token from '../../../Creds/Creds';
 import moment from 'moment';
-import DevTools from 'mobx-react-devtools';
+// import DevTools from 'mobx-react-devtools';
 
 
 if (!token) {
@@ -95,7 +95,6 @@ export default class TripMap extends Component {
                 // transitionEasing={d3.easeCubic}
                 >
                 { TripStore.checkins.map(this.renderMarker) }
-            <DevTools/>
             </MapGL>
         );
     }
