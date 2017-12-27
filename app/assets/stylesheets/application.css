@@ -65,6 +65,16 @@ span {
     /*filter: blur(1px) !important;*/
 /*}*/
 
+.mapboxgl-map {
+    background-color: black;
+
+}
+
+mapboxgl-ctrl mapboxgl-ctrl-attrib {
+    color: black !important;
+    text-decoration: none !important;
+
+}
 .modal-dialog  {
     background-color: black !important;
     opacity: .9 !important;
@@ -80,6 +90,8 @@ span {
     margin-left: .5%;
 
 }
+
+
 
 .trip-form-container {
   position: absolute;
