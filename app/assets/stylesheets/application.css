@@ -70,7 +70,7 @@ span {
 
 }
 
-mapboxgl-ctrl mapboxgl-ctrl-attrib {
+.mapboxgl-ctrl mapboxgl-ctrl-attrib {
     color: black !important;
     text-decoration: none !important;
 
@@ -79,15 +79,15 @@ mapboxgl-ctrl mapboxgl-ctrl-attrib {
     background-color: black !important;
     opacity: .9 !important;
     text-decoration: black !important;
-    margin-top: 35% !important;
+    margin-top: 25% !important;
 }
 
 .navbar-header {
-    margin-left: .5%;
+    margin-left: .25%;
 }
 
 .navbar-collapse {
-    margin-left: .5%;
+    margin-left: .25%;
 
 }
 
