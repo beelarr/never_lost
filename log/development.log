@@ -21915,3 +21915,54 @@ TripChannel#receive({"owner_uuid"=>"bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80", "lat"
   [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80"], ["LIMIT", 1]]
 [ActionCable] Broadcasting to trip_730eaf07-a0ea-452e-851a-591bb5db004a: {:lat=>36.2179399, :lon=>-86.72658919999999, :captured_at=>1514418343975}
 TripChannel transmitting {"lat"=>36.2179399, "lon"=>-86.72658919999999, "captured_at"=>1514418343975} (via streamed from trip_730eaf07-a0ea-452e-851a-591bb5db004a)
+TripChannel#receive({"owner_uuid"=>"bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80", "lat"=>36.2179551, "lon"=>-86.726574, "captured_at"=>1514418353055})
+  [1m[36mTrip Load (0.7ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_730eaf07-a0ea-452e-851a-591bb5db004a: {:lat=>36.2179551, :lon=>-86.726574, :captured_at=>1514418353055}
+TripChannel transmitting {"lat"=>36.2179551, "lon"=>-86.726574, "captured_at"=>1514418353055} (via streamed from trip_730eaf07-a0ea-452e-851a-591bb5db004a)
+TripChannel#receive({"owner_uuid"=>"bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80", "lat"=>36.2179287, "lon"=>-86.7265821, "captured_at"=>1514418362133})
+  [1m[36mTrip Load (0.7ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_730eaf07-a0ea-452e-851a-591bb5db004a: {:lat=>36.2179287, :lon=>-86.7265821, :captured_at=>1514418362133}
+TripChannel transmitting {"lat"=>36.2179287, "lon"=>-86.7265821, "captured_at"=>1514418362133} (via streamed from trip_730eaf07-a0ea-452e-851a-591bb5db004a)
+TripChannel#receive({"owner_uuid"=>"bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80", "lat"=>36.217937, "lon"=>-86.726581, "captured_at"=>1514418371190})
+  [1m[36mTrip Load (0.7ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_730eaf07-a0ea-452e-851a-591bb5db004a: {:lat=>36.217937, :lon=>-86.726581, :captured_at=>1514418371190}
+TripChannel transmitting {"lat"=>36.217937, "lon"=>-86.726581, "captured_at"=>1514418371190} (via streamed from trip_730eaf07-a0ea-452e-851a-591bb5db004a)
+TripChannel#receive({"owner_uuid"=>"bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80", "lat"=>36.2179417, "lon"=>-86.72658940000001, "captured_at"=>1514418380293})
+  [1m[36mTrip Load (2.1ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_730eaf07-a0ea-452e-851a-591bb5db004a: {:lat=>36.2179417, :lon=>-86.72658940000001, :captured_at=>1514418380293}
+TripChannel transmitting {"lat"=>36.2179417, "lon"=>-86.72658940000001, "captured_at"=>1514418380293} (via streamed from trip_730eaf07-a0ea-452e-851a-591bb5db004a)
+TripChannel#receive({"owner_uuid"=>"bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80", "lat"=>36.2179436, "lon"=>-86.72657339999999, "captured_at"=>1514418389410})
+  [1m[36mTrip Load (0.7ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_730eaf07-a0ea-452e-851a-591bb5db004a: {:lat=>36.2179436, :lon=>-86.72657339999999, :captured_at=>1514418389410}
+TripChannel transmitting {"lat"=>36.2179436, "lon"=>-86.72657339999999, "captured_at"=>1514418389410} (via streamed from trip_730eaf07-a0ea-452e-851a-591bb5db004a)
+TripChannel#receive({"owner_uuid"=>"bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80", "lat"=>36.2179516, "lon"=>-86.72660599999999, "captured_at"=>1514418398455})
+  [1m[36mTrip Load (1.3ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_730eaf07-a0ea-452e-851a-591bb5db004a: {:lat=>36.2179516, :lon=>-86.72660599999999, :captured_at=>1514418398455}
+TripChannel transmitting {"lat"=>36.2179516, "lon"=>-86.72660599999999, "captured_at"=>1514418398455} (via streamed from trip_730eaf07-a0ea-452e-851a-591bb5db004a)
+TripChannel#receive({"owner_uuid"=>"bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80", "lat"=>36.217942199999996, "lon"=>-86.72658700000001, "captured_at"=>1514418411654})
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."owner_uuid" = $1 LIMIT $2[0m  [["owner_uuid", "bfc5dcef-c5a2-4ecb-82e3-0db3f8319b80"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to trip_730eaf07-a0ea-452e-851a-591bb5db004a: {:lat=>36.217942199999996, :lon=>-86.72658700000001, :captured_at=>1514418411654}
+TripChannel transmitting {"lat"=>36.217942199999996, "lon"=>-86.72658700000001, "captured_at"=>1514418411654} (via streamed from trip_730eaf07-a0ea-452e-851a-591bb5db004a)
+Started GET "/" for ::1 at 2017-12-27 17:47:00 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-12-27 17:47:00 -0600
+TripChannel stopped streaming from trip_730eaf07-a0ea-452e-851a-591bb5db004a
+Started GET "/" for ::1 at 2017-12-27 17:47:02 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-27 17:47:05 -0600
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
