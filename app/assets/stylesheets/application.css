@@ -65,21 +65,33 @@ span {
     /*filter: blur(1px) !important;*/
 /*}*/
 
+.mapboxgl-map {
+    background-color: black;
+
+}
+
+.mapboxgl-ctrl mapboxgl-ctrl-attrib {
+    color: black !important;
+    text-decoration: none !important;
+
+}
 .modal-dialog  {
     background-color: black !important;
     opacity: .9 !important;
     text-decoration: black !important;
-    margin-top: 35% !important;
+    margin-top: 25% !important;
 }
 
 .navbar-header {
-    margin-left: .5%;
+    margin-left: .25%;
 }
 
 .navbar-collapse {
-    margin-left: .5%;
+    margin-left: .25%;
 
 }
+
+
 
 .trip-form-container {
   position: absolute;
@@ -87,7 +99,7 @@ span {
   left: 0px;
   width: 100%;
   z-index: 100;
-  padding: 15px;
+  padding: 5%;
   background-color: black;
   opacity: .98;
 }
