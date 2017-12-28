@@ -62,17 +62,46 @@ export default class TripForm extends Component {
                             href={trip_url}
                             open={this.state.open}>
                             <Modal.Header>
-                                <Icon name='map signs' size='huge'  />
+                                <Icon className='modalIcon' name='tree' size='huge'/>
+
                             </Modal.Header>
                             <Modal.Body>
-                            <h1 style={{ fontFamily: 'Ubuntu'}}>
-                                {TripStore.trip.name}, you are now being tracked!!<br/>
-                                <a
-                                style={{ textDecoration: 'none' }}
-                                href={ trip_url }
-                                >
-                                    Click for your link to share.</a>
+                            <h1 style={{
+                                fontFamily: 'Ubuntu',
+                                display: 'flex',
+                                justifyContent: 'center'
+
+                            }}>
+                                {TripStore.trip.name}, you are now being tracked!<br/>
                             </h1>
+                            <h3
+                                style={{
+                                    fontFamily: 'Ubuntu',
+                                    display: 'flex',
+                                    justifyContent: 'center'
+                                }}
+                            >
+                                Share your trip.
+                            </h3>
+                            <div
+                                style={{
+                                    display: 'flex',
+                                    justifyContent: 'space-around'
+                                }}
+                            >
+                                <a
+
+                                    href={`mailto:?body=Follow%20me%20while%20I%20hike%20via%20NeverLost.%0A${trip_url}`}
+                                >
+                                    <Icon name="mail outline" size='large' />
+                                </a>
+                                <a
+
+                                    href={`sms:?body=Follow%20me%20while%20I%20hike%20via%20NeverLost.%0A${trip_url}`}
+                                >
+                                    <Icon name="share" size='large' />
+                                </a>
+                            </div>
                             </Modal.Body>
                         </Modal.Dialog>
                 </Navbar>
