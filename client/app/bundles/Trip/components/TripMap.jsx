@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
 import MapGL, { Marker, Popup, FlyToInterpolator } from 'react-map-gl';
 import Pin from './Pin';
+import PinInfo from './PinInfo';
 import token from '../../../Creds/Creds';
 import moment from 'moment';
 // import DevTools from 'mobx-react-devtools';
@@ -47,11 +48,24 @@ export default class TripMap extends Component {
                 key={checkin.captured_at}
                 longitude={checkin.lon}
                 latitude={checkin.lat}>
-                <Pin size={20} onClick={() => this.setState({popupInfo: city})} />
+                <Pin size={20} onClick={() => this._renderPopup} />
 
             </Marker>
       );
     };
+
+    _renderPopup = checkin => {
+
+
+        return  (
+            <Popup tipSize={5}
+                   anchor="top"
+                   longitude={checkin.lon}
+                   latitude={checkin.lat} >
+                <PinInfo checkin={checkin} />
+            </Popup>
+        );
+    }
 
     //Call back to handles map dragging, panning ect
     onViewportChange = viewport => this.setState({viewport});
