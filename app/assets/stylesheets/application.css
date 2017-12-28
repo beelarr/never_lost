@@ -14,8 +14,8 @@
  *= require_self
  */
 a {
-  text-decoration: none;
-  color: whitesmoke;
+  text-decoration: none !important;
+
 }
 
 body {
@@ -31,6 +31,7 @@ button {
   border: 1px solid #B0BEC5;
   font-family: 'Aladin', sans-serif;
 }
+
 
 
 input {
@@ -64,6 +65,13 @@ span {
     /*width: 100vw !important;*/
     /*filter: blur(1px) !important;*/
 /*}*/
+
+.modal-header {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
 
 .mapboxgl-map {
     background-color: black;
