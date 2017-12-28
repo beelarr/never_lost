@@ -91,13 +91,13 @@ export default class TripForm extends Component {
                             >
                                 <a
 
-                                    href={`mailto:?Subject=Never%20Lost%20--%20Track%20Me%20on%20My%20Hike.?body=Follow%20me%20while%20I%20hike%20via%20NeverLost.%0A${trip_url}`}
+                                    href={`mailto:?Subject=Never%20Lost%20--%20Track%20Me%20on%20My%20Hike.&body=Follow%20me%20while%20I%20hike%20via%20NeverLost.%0A${trip_url}`}
                                 >
                                     <Icon name="mail outline" size='large' />
                                 </a>
                                 <a
 
-                                    href={`sms:111?body=Follow%20me%20while%20I%20hike%20via%20NeverLost.%0A${trip_url}`}
+                                    href={`sms:;?body=Follow%20me%20while%20I%20hike%20via%20NeverLost.%0A${trip_url}`}
                                 >
                                     <Icon name="share" size='large' />
                                 </a>
