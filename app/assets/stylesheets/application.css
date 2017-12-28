@@ -139,13 +139,15 @@ span {
 }
 
 .station:hover {
-    background: rgba(0,0,0,0.8);
-    color: #fff;
+    background: rgba(255,255,255,0.8);
+    color: black;
+
 }
 
 .station:hover span {
     display: flex;
     flex-direction: column;
+
 }
 
 .scrolling {
