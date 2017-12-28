@@ -90,6 +90,10 @@ span {
     margin-top: 25% !important;
 }
 
+.navbar-brand {
+    color: white !important;
+}
+
 .navbar-header {
     margin-left: .5%;
 }
