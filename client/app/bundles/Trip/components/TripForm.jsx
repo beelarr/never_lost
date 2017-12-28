@@ -56,6 +56,7 @@ export default class TripForm extends Component {
                         <Navbar.Toggle />
                     </Navbar.Header>
                     <Navbar.Collapse>
+                    </Navbar.Collapse>
                         <Modal.Dialog
                             inverse
                             href={trip_url}
@@ -74,7 +75,6 @@ export default class TripForm extends Component {
                             </h1>
                             </Modal.Body>
                         </Modal.Dialog>
-                    </Navbar.Collapse>
                 </Navbar>
             )
         }
