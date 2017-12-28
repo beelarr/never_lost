@@ -46,7 +46,7 @@ export default class TripForm extends Component {
                             <a
                                 href="/"
                                 style={{
-                                    fontFamily: 'Aladin',
+                                    fontFamily: 'Montserrat Alternates',
                                     fontSize: 35,
                                 }}>
                                 <Icon name='tree' />
@@ -66,14 +66,14 @@ export default class TripForm extends Component {
 
                             </Modal.Header>
                             <Modal.Body>
-                            <h1 style={{
+                            <h2 style={{
                                 fontFamily: 'Ubuntu',
                                 display: 'flex',
                                 justifyContent: 'center'
 
                             }}>
                                 {TripStore.trip.name}, you are now being tracked!<br/>
-                            </h1>
+                            </h2>
                             <h3
                                 style={{
                                     fontFamily: 'Ubuntu',
@@ -118,11 +118,11 @@ export default class TripForm extends Component {
                         <a
                             href="/"
                             style={{
-                                fontFamily: 'Aladin',
+                                fontFamily: 'Montserrat Alternates',
                                 fontSize: 35,
                             }}>
                             <Icon name='tree' />
-                            Never Lost
+                            NEVERLOST
                         </a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
@@ -133,7 +133,7 @@ export default class TripForm extends Component {
                             <FormControl
                                 type="text"
                                 placeholder="Trail Name"
-                                style={{ fontFamily: 'Aladin' }}
+                                style={{ fontFamily: 'Montserrat Alternates' }}
                                 inputRef={input => this.nameInput = input} required
                                 onKeyPress={e => this.handleSubmit(e)}/>
                             {' '}

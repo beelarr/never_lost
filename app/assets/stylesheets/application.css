@@ -15,7 +15,6 @@
  */
 a {
   text-decoration: none !important;
-
 }
 
 body {
@@ -65,6 +64,10 @@ span {
     /*width: 100vw !important;*/
     /*filter: blur(1px) !important;*/
 /*}*/
+
+.form-group {
+    background-color: white !important;
+}
 
 .modal-header {
     display: flex !important;
