@@ -131,6 +131,10 @@ span {
     line-height: 24px;
     font-size: 13px;
     white-space: nowrap;
+    /*position: relative;*/
+
+
+
 
 }
 
@@ -141,12 +145,18 @@ span {
 .station:hover {
     background: rgba(255,255,255,0.8);
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .station:hover span {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
