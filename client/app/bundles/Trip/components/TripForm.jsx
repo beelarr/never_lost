@@ -97,7 +97,7 @@ export default class TripForm extends Component {
                                 </a>
                                 <a
 
-                                    href={`sms:;?body=Follow%20me%20while%20I%20hike%20via%20NeverLost.%0A${trip_url}`}
+                                    href={`sms:123&body=Follow%20me%20while%20I%20hike%20via%20NeverLost.%0A${trip_url}`}
                                 >
                                     <Icon name="share" size='large' />
                                 </a>
