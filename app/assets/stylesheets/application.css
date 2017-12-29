@@ -143,8 +143,8 @@ span {
     padding-right: 12px;
     margin: -12px;
     color: transparent;
-    line-height: 1rem;
-    font-size: .75rem;
+    line-height: .85rem;
+    font-size: .6rem;
     white-space: nowrap;
 
 }

@@ -48,7 +48,7 @@ export default class TripMap extends Component {
                 latitude={checkin.lat}>
                   <div className="station">
                      <span>
-                         <h3
+                         <h4
 
                              style={{
                                  display: 'flex',
@@ -56,7 +56,7 @@ export default class TripMap extends Component {
                                  textDecoration: 'underline'
                              }}
 
-                         >Check-In</h3> </span>
+                         >Check-In</h4> </span>
                      <span>Date:  {moment(checkin.captured_at).format('MMMM Do YYYY')}</span>
                      <span>Time:  {moment(checkin.captured_at).format('h:mm:ss a')}</span>
                      <span>Latitude: {checkin.lat} </span>

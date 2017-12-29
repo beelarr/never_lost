@@ -64,22 +64,22 @@ export default class TripForm extends Component {
                                 <Icon className='modalIcon' name='tree' size='huge'/>
                             </Modal.Header>
                             <Modal.Body>
-                            <h2 style={{
+                            <h4 style={{
                                     fontFamily: 'Ubuntu',
                                     display: 'flex',
                                     justifyContent: 'center'
 
                             }}>
                                 {TripStore.trip.name}, you are now being tracked!<br/>
-                            </h2>
-                            <h3
+                            </h4>
+                            <h5
                                 style={{
                                     fontFamily: 'Ubuntu',
                                     display: 'flex',
                                     justifyContent: 'center'
                                 }}>
                                 Share your trip.
-                            </h3>
+                            </h5>
                             <div
                                 style={{
                                     display: 'flex',
@@ -99,6 +99,7 @@ export default class TripForm extends Component {
                                     <Icon name="share" size='large' />
                                 </a>
                             </div>
+                                <br/>
                                 <a href={trip_url}>
                                     <h5
                                         style={{
