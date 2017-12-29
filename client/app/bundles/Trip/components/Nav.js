@@ -21,7 +21,6 @@ const navbar = (props) => {
                     NEVERLOST
                 </a>
             </Navbar.Brand>
-            <Navbar.Toggle />
             </Navbar.Header>
         </Navbar>
     )
