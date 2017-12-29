@@ -23,8 +23,6 @@ const navbar = (props) => {
             </Navbar.Brand>
             <Navbar.Toggle />
             </Navbar.Header>
-            <Navbar.Collapse>
-            </Navbar.Collapse>
         </Navbar>
     )
 };

@@ -47,7 +47,7 @@ export default class TripForm extends Component {
                                 href="/"
                                 style={{
                                     fontFamily: 'Montserrat Alternates',
-                                    fontSize: 34,
+                                    fontSize: 33,
                                 }}>
                                 <Icon name='tree' />
                                 NEVERLOST
@@ -127,7 +127,7 @@ export default class TripForm extends Component {
                             href="/"
                             style={{
                                 fontFamily: 'Montserrat Alternates',
-                                fontSize: 34,
+                                fontSize: 33,
                             }}>
                             <Icon name='tree' />
                             NEVERLOST
