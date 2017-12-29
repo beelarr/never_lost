@@ -15,7 +15,7 @@ const navbar = (props) => {
                     href="/"
                     style={{
                         fontFamily: 'Montserrat Alternates',
-                        fontSize: 35,
+                        fontSize: 34,
                     }}>
                     <Icon name='tree' />
                     NEVERLOST
