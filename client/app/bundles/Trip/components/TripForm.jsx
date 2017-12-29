@@ -50,7 +50,7 @@ export default class TripForm extends Component {
                                     fontSize: 35,
                                 }}>
                                 <Icon name='tree' />
-                                Never Lost
+                                NEVERLOST
                             </a>
                         </Navbar.Brand>
                         <Navbar.Toggle />
@@ -63,13 +63,12 @@ export default class TripForm extends Component {
                             open={this.state.open}>
                             <Modal.Header>
                                 <Icon className='modalIcon' name='tree' size='huge'/>
-
                             </Modal.Header>
                             <Modal.Body>
                             <h2 style={{
-                                fontFamily: 'Ubuntu',
-                                display: 'flex',
-                                justifyContent: 'center'
+                                    fontFamily: 'Ubuntu',
+                                    display: 'flex',
+                                    justifyContent: 'center'
 
                             }}>
                                 {TripStore.trip.name}, you are now being tracked!<br/>
@@ -79,8 +78,7 @@ export default class TripForm extends Component {
                                     fontFamily: 'Ubuntu',
                                     display: 'flex',
                                     justifyContent: 'center'
-                                }}
-                            >
+                                }}>
                                 Share your trip.
                             </h3>
                             <div
@@ -102,6 +100,16 @@ export default class TripForm extends Component {
                                     <Icon name="share" size='large' />
                                 </a>
                             </div>
+                                <a href={trip_url}>
+                                    <h5
+                                        style={{
+                                            fontFamily: 'Ubuntu',
+                                            display: 'flex',
+                                            justifyContent: 'center'
+                                        }}>
+                                        My Trip
+                                    </h5>
+                                </a>
                             </Modal.Body>
                         </Modal.Dialog>
                 </Navbar>
@@ -133,7 +141,7 @@ export default class TripForm extends Component {
                             <FormControl
                                 type="text"
                                 placeholder="Trail Name"
-                                style={{ fontFamily: 'Montserrat Alternates' }}
+                                style={{ fontFamily: 'Ubuntu' }}
                                 inputRef={input => this.nameInput = input} required
                                 onKeyPress={e => this.handleSubmit(e)}/>
                             {' '}

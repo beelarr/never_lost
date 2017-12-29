@@ -14,11 +14,11 @@ const navbar = (props) => {
                 <a
                     href="/"
                     style={{
-                        fontFamily: 'Aladin',
+                        fontFamily: 'Montserrat Alternates',
                         fontSize: 35,
                     }}>
                     <Icon name='tree' />
-                    Never Lost
+                    NEVERLOST
                 </a>
             </Navbar.Brand>
             <Navbar.Toggle />
@@ -32,4 +32,3 @@ const navbar = (props) => {
 export default navbar;
 
 
-// Powered By: Matt Brown

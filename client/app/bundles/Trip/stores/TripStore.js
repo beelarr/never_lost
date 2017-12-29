@@ -41,7 +41,7 @@ class TripStore {
         this.checkins = this.checkins.slice(-250);
     };
 
-    // sends users location every 10 sec or what ever setTimeout says
+    // sends users location every 5 sec or what ever setTimeout says
     @action postCheckin = () => {
         navigator.geolocation.getCurrentPosition(position => {
 
