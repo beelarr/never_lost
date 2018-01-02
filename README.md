@@ -11,7 +11,7 @@ Fork and/or clone this repo to your local machine.  Then create the following fi
             └── Creds
                 └──Creds.js
                 
-Creds.js - (contains google places api key)
+Creds.js - (contains mapbox api key)
                 
                 
 
