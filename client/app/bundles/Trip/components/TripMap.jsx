@@ -109,7 +109,7 @@ export default class TripMap extends Component {
             <MapGL
                 {...viewport}
                 {...this.state.settings}
-                mapStyle="mapbox://styles/beelarr/cjb2k1hc27uxt2sml0e1yff01"
+                mapStyle="mapbox://styles/beelarr/cjc2fg7wa15tq2smnjbfpu894"
                 onViewportChange={this.onViewportChange}
                 mapboxApiAccessToken={token}
                 // transitionDuration={1000}
