@@ -1,6 +1,5 @@
 # [Never Lost](http://never-lost.herokuapp.com/)
-A easy web app for hikers to share their hiking location with familly and friends.
-
+Hiker's can easily share their location with family and friends while exploring.
 
 ### Getting Started
 
