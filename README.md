@@ -3,7 +3,9 @@ Hiker's can easily share their location with family and friends while exploring.
 <p align="center">
   <img src="https://media.giphy.com/media/xT1R9S5TEPk8OpD9YY/giphy.gif"/>
 </p>
-### [Demo](https://www.youtube.com/watch?v=KqyUYT0KD54)
+
+### [Full Length Demo](https://youtu.be/eMFzc0qqyb8)
+
 ### Getting Started
 
 Fork and/or clone this repo to your local machine.  Then create the following files:
