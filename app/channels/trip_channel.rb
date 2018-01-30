@@ -1,6 +1,6 @@
 class TripChannel < ApplicationCable::Channel
 
-  # subscribing and to and sreaming messages that are broadcast to this channel
+  # subscribing and to and streaming messages that are broadcast to this channel
   def subscribed
     stream_from "trip_#{params[:room]}"
   end
@@ -10,7 +10,7 @@ class TripChannel < ApplicationCable::Channel
     trip = Trip.find_by!(owner_uuid: data['owner_uuid'])
 
     # add additional checkin
-    # not recording in demo to keep DB small
+    # not active in demo to keep DB small
     # checkin = trip.checkins.create!({
     #   lat: data['lat'],
     #   lon: data['lon'],
